@@ -29,22 +29,10 @@ const options = {
   },
 };
 
-// flatpickr(mainInput, options);
-// buttonStart.addEventListener(
-//   'click',
-//   () => {
-//     timerId = setInterval(turnStart);
-//   },
-//   1000
-// );
 flatpickr(mainInput, options);
-buttonStart.addEventListener(
-  'click',
-  () => {
-    timerId = setInterval(turnStart,1000);
-  },
-  
-);
+buttonStart.addEventListener('click', () => {
+  timerId = setInterval(turnStart, 1000);
+});
 
 function turnStart() {
   setAttributeDefault();
@@ -56,7 +44,7 @@ function turnStart() {
 
   if (datedifference < 1000) {
     clearInterval(timerId);
-    console.log(datedifference)
+    console.log(datedifference);
   }
 }
 function addLeadingZero({ days, hours, minutes, seconds }) {
