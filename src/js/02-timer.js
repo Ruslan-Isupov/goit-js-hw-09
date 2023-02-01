@@ -38,7 +38,7 @@ function turnStart() {
   setAttributeDefault();
 
   datedifference = particularDate - Date.now();
-  // console.log(datedifference);
+
   const calendarDate = convertMs(datedifference);
   addLeadingZero(calendarDate);
 

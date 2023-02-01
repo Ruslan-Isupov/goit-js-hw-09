@@ -26,8 +26,7 @@ function submitForm(e) {
     } else {
       delay;
     }
-    console.log(delay);
-    console.log(position);
+    
     createPromise(position, delay)
       .then(({ position, delay }) => {
         Notiflix.Notify.success(
