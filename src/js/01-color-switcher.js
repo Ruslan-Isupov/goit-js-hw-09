@@ -1,7 +1,7 @@
 const body = document.querySelector('body');
 const startChangeBgColor = document.querySelector('[data-start]');
 const stopChangeBgColor = document.querySelector('[data-stop]');
-
+let timerId = 0;
 startChangeBgColor.addEventListener('click', changeBg);
 
 function changeBg(e) {
