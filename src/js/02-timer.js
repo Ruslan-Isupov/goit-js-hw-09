@@ -44,7 +44,7 @@ function turnStart() {
 
   if (datedifference < 1000) {
     clearInterval(timerId);
-    console.log(datedifference);
+    
   }
 }
 function addLeadingZero({ days, hours, minutes, seconds }) {
